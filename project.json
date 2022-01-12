@@ -3,9 +3,11 @@
   "description": "Library of PMIC test cases  ",
   "main": "NewActivity.xaml",
   "dependencies": {
+    "Microsoft.Activities": "1.0.1",
     "ReporterForUiPath.Activities": "2.0.0",
     "UiPath.Excel.Activities": "2.11.4",
     "UiPath.Mail.Activities": "1.12.3",
+    "UiPath.PDF.Activities": "3.4.1",
     "UiPath.System.Activities": "21.10.3",
     "UiPath.Testing.Activities": "1.4.5",
     "UiPath.UIAutomation.Activities": "21.10.4"
@@ -14,7 +16,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.10.4.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.95590258",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -41,7 +43,13 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "19f170f5-da62-4172-a212-c0f35d064d3e",
+        "fileName": "TestCase.xaml"
+      }
+    ],
     "modernBehavior": true
   },
   "expressionLanguage": "VisualBasic",

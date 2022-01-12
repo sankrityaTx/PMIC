@@ -1,0 +1,1596 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="test_seq" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="820,8684.66666666667" sap2010:WorkflowViewState.IdRef="test_seq_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:uuam="clr-namespace:UiPath.UIAutomationNext.Activities.Models;assembly=UiPath.UIAutomationNext.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="39">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>ReporterForUiPath.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="27">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="test_seq" sap:VirtualizedContainerService.HintSize="830,8620" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Home, Auto and Business Insurance | Preferred Mutual Insurance Company" sap:VirtualizedContainerService.HintSize="788,8528" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="7be7abbe-7be7-423a-b042-801525561211" Version="V1" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="754,8310" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="site" />
+              <Variable x:TypeArguments="x:String" Name="siteTxt" />
+              <Variable x:TypeArguments="x:String" Name="homeTxt" />
+              <Variable x:TypeArguments="x:String" Name="domesticTxt" />
+              <Variable x:TypeArguments="x:String" Name="disclaimerTxt" />
+              <Variable x:TypeArguments="x:String" Name="termOfuseTxt" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute home 1" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_12" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID0" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="8e58480dede5060700bea49d2806a26e" Selector="&lt;webctrl aaname='Home' parentid='form1' tag='A' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_12">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID0}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Home exists" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_1" Name="step 1" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute home 1" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_13" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID1" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="8e58480dede5060700bea49d2806a26e" Selector="&lt;webctrl aaname='Home' parentid='form1' tag='A' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_13">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID1}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute sitemap 1" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_14" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists sitemap" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_4">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID2" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="ac80ec230d82ebe4c0fa2af8bab6773f" Selector="&lt;webctrl aaname='Sitemap' parentid='form1' tag='A' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_14">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID2}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Sitemap exist" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_2" Name="step 2" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute home 1" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_15" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID3" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="f29267509beefbebff6796ab82fe12a1" Selector="&lt;webctrl aaname='Online Privacy Policy' parentid='form1' tag='A' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_15">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID3}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="online privacy policy exists" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_3" Name="step 3" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute home 1" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_16" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_6">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID4" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="3165a97f7e6b1c367ec46f9bb23d91be" Selector="&lt;webctrl aaname='Terms Of Use' parentid='form1' tag='A' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_16">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID4}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="terms of use" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_4" Name="step 4" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute Desclaimer 1" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_17" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_7">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID5" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="9e19837f25e0f5b6231b92136870fda1" Selector="&lt;webctrl aaname='Disclaimer' parentid='form1' tag='A' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_17">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID5}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Desclaimer Exists" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_5" Name="step 5" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute NYS 1" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_18" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_8">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID6" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="447d8581793745cbe52991f870752944" Selector="&lt;webctrl aaname='NYS Domestic Violence' parentid='form1' tag='A' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_18">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID6}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Nys Domestic Violence Exists" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_6" Name="step 6" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute facebook1" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_19" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_9">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID7" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="b6df025c9620ac843ddce40e9ce90bf6" Selector="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;footer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;i' parentid='form1' tag='I' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_19">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID7}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="facebook exist" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_7" Name="step 7" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute twiter 1" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_20" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_10">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID8" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="32570f204be607fbd505e9b03cf2bad7" Selector="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;footer&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;i' idx='2' parentid='form1' tag='I' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_20">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID8}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Twiter exists" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_8" Name="step 8" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute AM rating" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_22" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_12">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID9" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="dfc04ceecc7923f4b863d526a741495b" Selector="&lt;webctrl aaname='A.M. Best' tag='IMG' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_22">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID9}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Am Best rating exist" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_10" Name="step 10" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute calling num" sap:VirtualizedContainerService.HintSize="712,180" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_23" Operator="Equality" OutputArgument="Exists" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:UiElementExists DisplayName="Element Exists 'A  /'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="UiElementExists_13">
+                    <ui:UiElementExists.Exists>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" x:Name="__ReferenceID10" Name="Exists" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Exists>
+                    <ui:UiElementExists.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <VariableReference x:TypeArguments="x:Boolean">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Boolean" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:UiElementExists.Result>
+                    <ui:UiElementExists.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8c5ca542-ec4f-4809-875e-a7ab43eefe94" InformativeScreenshot="4d9f9435157ca7f0934898a76d543953" Selector="&lt;webctrl aaname='800.333.7642' parentid='form1' tag='A' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:UiElementExists.Target>
+                  </ui:UiElementExists>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_23">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID10}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:Boolean">[True]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="calling number exists" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_11" Name="step 11" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute Sitemap" sap:VirtualizedContainerService.HintSize="712,96" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_1" Operator="Equality" OutputArgument="StatusCode" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_1" Method="GET" RelativeEndpoint="https://www.preferredmutual.com/sitemap">
+                    <ui:OrchestratorHttpRequest.ResponseHeaders>
+                      <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                        <VariableReference x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponseHeaders" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.ResponseHeaders>
+                    <ui:OrchestratorHttpRequest.Result>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.Result>
+                    <ui:OrchestratorHttpRequest.StatusCode>
+                      <OutArgument x:TypeArguments="x:Int32">
+                        <VariableReference x:TypeArguments="x:Int32">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID11" Name="StatusCode" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.StatusCode>
+                  </ui:OrchestratorHttpRequest>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_1">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID11}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["200"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Sitemap'" sap:VirtualizedContainerService.HintSize="712,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/" DesignTimeRectangle="494, 218, 98, 38" ElementType="Text" FriendlyName="'Sitemap'" FullSelectorArgument="&lt;webctrl aaname='Sitemap' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sitemap' parentid='form1' tag='A' type='' check:text='Sitemap' /&gt;" Guid="06e6d694-11f7-43ea-97b5-02ed615231a2" ImageBase64="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" InformativeScreenshot="b6366fcc06aba00191163f432805e9f2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home, Auto and Business Insurance | Preferred Mutual Insurance Company' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="397, 218, 71, 38" ElementType="Text" FriendlyName="'Home'" FullSelectorArgument="&lt;webctrl aaname='Home' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Home' parentid='form1' tag='A' type='' check:text='Home' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAqCAYAAAD75qYVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMySURBVGhD7ZfPSxtBFMf7R7YHI5IgCchCqQQCJV72ohRyCZTmEpGIWKSUoqUqCrUUa5HSVESlGKQerISEQkQihSXw7ezu28lsMqsZ6Hho3wcG9M2PffPJzO7MAzAjw7IMYFkGsCwDWJYBLMsAlmUAyzKAZRnAsgxgWQawLANYlgEsy4AhWa0NFw8fjYtSwxHFbuWwRu3HMX9IsX8UlmUAyzKAZRnAsgy4H1leG/WVEgq5DLXNIO3MovzmAK0etRlA5lHcRkv83/n2CnP5HMb8WCoHx11GvR229Wl9VerF+Fm3ivdnN1Srx2se4OWzGWQnwvzDcZP7WZfVPVuHGyWjKxOz2GxSY4W+rHXUxd+hhIGScrHZvsFR1RmuC4ojctJPvLU1qx8zKBkUX5+jS20j7Mpqb6OYCuvGnoqV8NML4z0PncY2SlOU3JR41kBmMo/JHNKpaVQ+teHRKuw0VvvjTmTEpB2UNhroUL3X3EM5Gju/joswLOmKnLN+nZBSqInVTWkFO2BhhiQK0cdRRcgtssxLXJaH/ee07fKruNBtt+4XlGnS2aUGBUPUPIrvlP1GXKwVZH26Fu8b8H0Z6aDeX30UC7jE27z+mRGnS7RSB0Tbk3W9hzmKlz/HfyEVOelUfCX38yhh95qCKsc1WgE5LOrm3DtAhZ4fy6uRJFHB3xGaNva2oYwnTDYiIXmZx+QyTikWQ53QL4rFOMF8UB/Pq7NF4z4Wq51iw+j7WpMlk7prHDnpeH+ZB30Nh5D9ksbXT/hoIfoij1aKG/1f8P+TVQ1jo5Z7kdWPJ20T4q5t+Jdl3TnuLdiTpbzg3Z0rCg4jX/AD7yZbsuSHwf+gJByIk7AnSz06aM5RAcrR4cnaJQVDrMnqNbA46cfFwVPZYiqdjyUS+gL7vykosChL0BQTig6PjrhGnNMK0x1KlaR8rMkSSBlCmLtyohxKr/BjpwonyFnI3IrLtCtL0BWHwwIJ0xVf4r7mnWZTFnAjDp7RSV1XMnAWTu75uhNxfYldzUW6stO/ogxiV1ZI9+wDKu60uE6F7Ywv0kwyLMsAlmUAyzKAZRnAsgxgWQawLANY1sgAfwDNTA/CHYEzSgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute sitemapTxt" sap:VirtualizedContainerService.HintSize="712,232" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_24" Operator="Equality" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'Sitemap'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" ScrapingOptions="None" Version="V1">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/sitemap" DesignTimeRectangle="602, 434, 1025, 81" FriendlyName="'Sitemap'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="0923b1e2-faa9-4446-9802-e6b3beeced71" InformativeScreenshot="e7a7b3ce5950733741dce77ef626f9da.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sitemap | Preferred Mutual' /&gt;" SearchSteps="FuzzySelector">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="506, 232, 164, 70" ElementType="ListItem" FriendlyName="'Agents'" FullSelectorArgument="&lt;webctrl isleaf='1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='LI' type='' aaname='Agents' check:text='Agents' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[siteTxt]</OutArgument>
+                    </uix:NGetText.Text>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_24">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object">
+                          <VariableValue.Variable>
+                            <Variable x:TypeArguments="x:Object" Name="Text" />
+                          </VariableValue.Variable>
+                        </VariableValue>
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Sitemap"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="User on sitemap" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_12" Name="step 12" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute home" sap:VirtualizedContainerService.HintSize="712,96" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_2" Operator="Equality" OutputArgument="StatusCode" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_2" Method="GET" RelativeEndpoint="https://www.preferredmutual.com/">
+                    <ui:OrchestratorHttpRequest.ResponseHeaders>
+                      <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                        <VariableReference x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponseHeaders" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.ResponseHeaders>
+                    <ui:OrchestratorHttpRequest.Result>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.Result>
+                    <ui:OrchestratorHttpRequest.StatusCode>
+                      <OutArgument x:TypeArguments="x:Int32">
+                        <VariableReference x:TypeArguments="x:Int32">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID12" Name="StatusCode" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.StatusCode>
+                  </ui:OrchestratorHttpRequest>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_2">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID12}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["200"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Home'" sap:VirtualizedContainerService.HintSize="712,158" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/sitemap" DesignTimeRectangle="397, 459, 71, 38" ElementType="Text" FriendlyName="'Home'" FullSelectorArgument="&lt;webctrl aaname='Home' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Home' parentid='form1' tag='A' type='' check:text='Home' /&gt;" Guid="06fdc10b-6d90-420c-b32a-f4b104359125" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAqCAYAAAD75qYVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAM+SURBVGhD7ZfBSxtBFIf7R7YHI5IgCchCqQQCJV72ohRyCZTmEpGIWKSUoqUqCrUUtZWiFdFQDKEerISEQkQigSXw6+zO28lsMqsZ6Hho54MH+mZ29s2Xmd3ZR7CMjJWlgZWlgZWlgZWlgZWlgZWlgZWlgZWlgZWlgZWlgZWlgZWlgZWlwZCs5oaLx0/GWVRwSrk7OalQ/3HMn1DuH8XK0sDK0sDK0sDK0uBhZHktHK0UkMukqG8KSWcWxXfHaPaozwCijvw2muz/9vc3mMtmMObnEhk47jKOWryvT/NQamfjp90yPtZvqVWN1zjG6xczSE/w+vm48dcZl9Wpr8MNi1HFxCw2G9RZoi9rHUfsby5hIBIuNlu3OC07w21BOKwm9cSbW7PqMYNIIf/2Ah3qG2JWVmsb+QRvG3vOVsIvj+d7Htq1bRSmqLgpdq+BykQdkxkkE9Mo7bXg0Sps11b7406k2KQdFDZqaFO719hHMRw7u45LnhZ0WM1pv41JyVXY6qaygh2wMEMSmeizsIFzhyz9iMrycPCStl12FZeq7db5hiJNOr1UoyRHriP/QdpvxOVaTrQnK9FrA34sIxm0+6uPcgFXeJ9V3zPkfIlW6oBoc7Ju9jFH+eKX6C8kIyadiK7kfh0F7N5QUuasQisgg0XVnHvHKNH9I3XV4iRK+DtC0cfcNhT5mMmGxBQv6phcxjnlIsgT+k25CFXMB+3RutpbNO5TttopN4z6WmOyRFH3jSMmHb1e1EFvwyHEdXHjqyd8uhC+kUeL/Eb/F/z/ZJV5btR4EFn9fNw2Ie7bhn9Z1r3j3oE5WdID3t25puQw4gE/8GwyJUu8GPwXSsyBOA5zsuSjg+IcFSAdHZ6tXVGSY0xWr4bFST/PDp7SFpNpfy6Q0Fc46FKSYVAWo8EmFB4eHfYZcUErTHUolYryMSaLIWQwYe5KVTqUXuPnThlOUDOTuRWVaVYWo8MOhzkSpgpf4oHimWZSFnDLDp7hSV0VKTgL1Qf+3Am5ucKu4kO6tNP/RBnErCxOp/4JJXeafU7xftof0pZ4rCwNAlndbpcvQxvK2Nv/amWNGhFZltGwsjSwsjSwsjSwskYG+ANwk/X8V1pphwAAAABJRU5ErkJggg==" InformativeScreenshot="db62fae2028b6ae4f9bd0295e6fb33db.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Sitemap | Preferred Mutual' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="494, 459, 98, 38" ElementType="Text" FriendlyName="'Sitemap'" FullSelectorArgument="&lt;webctrl aaname='Sitemap' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sitemap' parentid='form1' tag='A' type='' check:text='Sitemap' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute homeTxt" sap:VirtualizedContainerService.HintSize="712,232" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_25" Operator="Contains" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'Contact Us'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" ScrapingOptions="None" Version="V1">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/" DesignTimeRectangle="441, 272, 518, 435" FriendlyName="'Download MYPreferred'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;strong' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='STRONG' /&gt;" Guid="66b744f0-ec88-4469-b3f8-a1f80cc38b86" InformativeScreenshot="a5580fe85a0aa86db5f16270498c7cbe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home, Auto and Business Insurance | Preferred Mutual Insurance Company' /&gt;" SearchSteps="FuzzySelector">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="849, 135, 148, 34" ElementType="Text" FriendlyName="'Contact Us'" FullSelectorArgument="&lt;webctrl aaname='Contact Us' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Contact Us' tag='A' type='' check:text='Contact Us' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[homeTxt]</OutArgument>
+                    </uix:NGetText.Text>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_25">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object">
+                          <VariableValue.Variable>
+                            <Variable x:TypeArguments="x:Object" Name="Text" />
+                          </VariableValue.Variable>
+                        </VariableValue>
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Download MYPreferred"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="User on Home" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_13" Name="step 13" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute Terms of Use" sap:VirtualizedContainerService.HintSize="712,96" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_4" Operator="Equality" OutputArgument="StatusCode" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request privacyPolicy" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_4" Method="GET" RelativeEndpoint="https://www.preferredmutual.com/terms-of-use">
+                    <ui:OrchestratorHttpRequest.ResponseHeaders>
+                      <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                        <VariableReference x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponseHeaders" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.ResponseHeaders>
+                    <ui:OrchestratorHttpRequest.Result>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.Result>
+                    <ui:OrchestratorHttpRequest.StatusCode>
+                      <OutArgument x:TypeArguments="x:Int32">
+                        <VariableReference x:TypeArguments="x:Int32">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID13" Name="StatusCode" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.StatusCode>
+                  </ui:OrchestratorHttpRequest>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_4">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID13}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["200"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Terms Of Use'" sap:VirtualizedContainerService.HintSize="712,158" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/" DesignTimeRectangle="892, 218, 159, 38" ElementType="Text" FriendlyName="'Terms Of Use'" FullSelectorArgument="&lt;webctrl aaname='Terms Of Use' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Terms Of Use' parentid='form1' tag='A' type='' check:text='Terms Of Use' /&gt;" Guid="f1d4fc03-eeaa-467b-9a0c-7ae620e860ee" ImageBase64="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" InformativeScreenshot="98206a7ccabba47a1a989d42d079f78f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home, Auto and Business Insurance | Preferred Mutual Insurance Company' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1076, 218, 126, 38" ElementType="Text" FriendlyName="'Disclaimer'" FullSelectorArgument="&lt;webctrl aaname='Disclaimer' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Disclaimer' parentid='form1' tag='A' type='' check:text='Disclaimer' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute TermsOfUse txt" sap:VirtualizedContainerService.HintSize="712,232" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_27" Operator="Equality" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'Terms of Use'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" ScrapingOptions="None" Version="V1">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/terms-of-use" DesignTimeRectangle="545, 434, 982, 81" FriendlyName="'Terms of Use'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="fb166d2f-682b-40a9-94a6-81ca724b8737" InformativeScreenshot="f6c4aadbcb202df284644ebaae3d854a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Terms of Use | Preferred Mutual' /&gt;" SearchSteps="FuzzySelector">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="506, 232, 164, 70" ElementType="ListItem" FriendlyName="'Agents'" FullSelectorArgument="&lt;webctrl isleaf='1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='LI' type='' aaname='Agents' check:text='Agents' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[termOfuseTxt]</OutArgument>
+                    </uix:NGetText.Text>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_27">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object">
+                          <VariableValue.Variable>
+                            <Variable x:TypeArguments="x:Object" Name="Text" />
+                          </VariableValue.Variable>
+                        </VariableValue>
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Terms of Use"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="user on termof Use" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_14" Name="step 13" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control AttributeDisclaimer" sap:VirtualizedContainerService.HintSize="712,96" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_5" Operator="Equality" OutputArgument="StatusCode" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request privacyPolicy" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_5" Method="GET" RelativeEndpoint="https://www.preferredmutual.com/disclaimer">
+                    <ui:OrchestratorHttpRequest.ResponseHeaders>
+                      <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                        <VariableReference x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponseHeaders" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.ResponseHeaders>
+                    <ui:OrchestratorHttpRequest.Result>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.Result>
+                    <ui:OrchestratorHttpRequest.StatusCode>
+                      <OutArgument x:TypeArguments="x:Int32">
+                        <VariableReference x:TypeArguments="x:Int32">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID14" Name="StatusCode" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.StatusCode>
+                  </ui:OrchestratorHttpRequest>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_5">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID14}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["200"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Disclaimer'" sap:VirtualizedContainerService.HintSize="712,158" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/terms-of-use" DesignTimeRectangle="1076, 457, 126, 38" ElementType="Text" FriendlyName="'Disclaimer'" FullSelectorArgument="&lt;webctrl aaname='Disclaimer' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Disclaimer' parentid='form1' tag='A' type='' check:text='Disclaimer' /&gt;" Guid="e870df04-809b-43ee-b24a-2b7051943a2e" ImageBase64="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" InformativeScreenshot="bd264ebfca9c8ed921323153d36cdc55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Terms of Use | Preferred Mutual' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="892, 457, 159, 38" ElementType="Text" FriendlyName="'Terms Of Use'" FullSelectorArgument="&lt;webctrl aaname='Terms Of Use' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Terms Of Use' parentid='form1' tag='A' type='' check:text='Terms Of Use' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute DesclaimerTxt" sap:VirtualizedContainerService.HintSize="712,232" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_28" Operator="Equality" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'Disclaimer'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" ScrapingOptions="None" Version="V1">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/disclaimer" DesignTimeRectangle="545, 434, 982, 81" FriendlyName="'Disclaimer'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="9bc8941e-6986-41d1-b04f-6437278f7c85" InformativeScreenshot="b147bae6fc2acf025e46cf2239611f6e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Disclaimer | Preferred Mutual' /&gt;" SearchSteps="FuzzySelector">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="506, 232, 164, 70" ElementType="ListItem" FriendlyName="'Agents'" FullSelectorArgument="&lt;webctrl isleaf='1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='LI' type='' aaname='Agents' check:text='Agents' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[disclaimerTxt]</OutArgument>
+                    </uix:NGetText.Text>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_28">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object">
+                          <VariableValue.Variable>
+                            <Variable x:TypeArguments="x:Object" Name="Text" />
+                          </VariableValue.Variable>
+                        </VariableValue>
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Disclaimer"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="User on desclaimer" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_15" Name="step 14" Status="Compare" TakeScreenshot="True" />
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute NYS domestic" sap:VirtualizedContainerService.HintSize="712,96" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_6" Operator="Equality" OutputArgument="StatusCode" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request privacyPolicy" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_6" Method="GET" RelativeEndpoint="https://www.preferredmutual.com/victims-of-domestic-violence-and-endangered-individuals">
+                    <ui:OrchestratorHttpRequest.ResponseHeaders>
+                      <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                        <VariableReference x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponseHeaders" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.ResponseHeaders>
+                    <ui:OrchestratorHttpRequest.Result>
+                      <OutArgument x:TypeArguments="x:String">
+                        <VariableReference x:TypeArguments="x:String">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:String" Name="Result" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.Result>
+                    <ui:OrchestratorHttpRequest.StatusCode>
+                      <OutArgument x:TypeArguments="x:Int32">
+                        <VariableReference x:TypeArguments="x:Int32">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID15" Name="StatusCode" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </ui:OrchestratorHttpRequest.StatusCode>
+                  </ui:OrchestratorHttpRequest>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_6">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID15}" />
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["200"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <uix:NClick ClickType="Single" DisplayName="Click 'NYS Domestic Violence'" sap:VirtualizedContainerService.HintSize="712,158" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/disclaimer" DesignTimeRectangle="1227, 468, 281, 38" ElementType="Text" FriendlyName="'NYS Domestic Violence'" FullSelectorArgument="&lt;webctrl aaname='NYS Domestic Violence' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='NYS Domestic Violence' parentid='form1' tag='A' type='' check:text='NYS Domestic Violence' /&gt;" Guid="67aff572-929e-4572-a1ad-5fab3ab3ffd0" ImageBase64="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" InformativeScreenshot="6e421db3ec90602974e799c64b949b60.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Disclaimer | Preferred Mutual' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1076, 468, 126, 38" ElementType="Text" FriendlyName="'Disclaimer'" FullSelectorArgument="&lt;webctrl aaname='Disclaimer' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Disclaimer' parentid='form1' tag='A' type='' check:text='Disclaimer' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute DomesticTxt" sap:VirtualizedContainerService.HintSize="712,232" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_29" Operator="Contains" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+              <uta:VerifyControlAttribute.ActivityToTest>
+                <ActivityAction>
+                  <uix:NGetText DisplayName="Get Text 'Victims of'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="7be7abbe-7be7-423a-b042-801525561211" ScrapingOptions="None" Version="V1">
+                    <uix:NGetText.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <VariableReference x:TypeArguments="ui:UiElement">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.OutUiElement>
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/victims-of-domestic-violence-and-endangered-individuals" DesignTimeRectangle="543, 434, 984, 162" FriendlyName="'Victims of'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="ff351161-195d-4e46-8be5-fb6b0587cdb1" InformativeScreenshot="5340002df177074f27ff9d1a7144623f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Victims of Domestic Violence and Endangered Individuals | Preferred Mutual' /&gt;" SearchSteps="FuzzySelector">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target DesignTimeRectangle="506, 232, 164, 70" ElementType="ListItem" FriendlyName="'Agents'" FullSelectorArgument="&lt;webctrl isleaf='1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='LI' type='' aaname='Agents' check:text='Agents' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKgAAABKCAYAAAAvxx89AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAbFSURBVHhe7ZrvhxtbGMfvXzevhiWsUBrLjX0RSyiNpVH21SiVy0rZ6IsolaVm2bgvYqlQQuWyUpZw5cXKsrKUWIYlhO89k53JPGdyJj96282T5vlwaGdOJrMznzznPM85f0AQGCOCCqwRQQXWiKACa0RQgTUiqMAaEVRgjQgqsEYEFVgjggqsEUEF1oigAmtEUIE1IqjAGhFUYI0IKrBGBBVYI4IKrBFBBdaIoAJrRFCBNSKowBoRVGCNCCqwRgQVWCOCCqwRQQXWiKACazZL0IcWHNuCZYUthcpVcE74LdkoQUctB/ZUzsdmH3eCs9uF981F+V150txvXnD092ODBB2h9cbW5Jw020HrIeiyRQzO89NnkD8fBEd/PzZHUDq876nI8Sr4t2XDaY2CTtuDCMqM0Rdn+kIyH/vwPhen/7ecloqv24UIygo1vDuBjH5i1FWH7psohoJaBTSGjz23BRGUE1TG3Qp8P1WagOZ0mLdQuFjeUO+6ierrHNI7weftFDIvS2j86ycbA9Tz4XXLSEzBxkN0LyooHqSjxG1yHQe1r8nC0MjvjwSTYzf+/WSRCqcwO2nkXlfRvpucjrirIx9+V2Iz3PNdB/WTInLpaA5v72ZQ+KuB3n3QhykbISh9qan3j3r6aFl9vq7UWoSH7vvcTCUgaraKRm24iwS9aeDoGf3cbLMPXfRMyfVlOep33Mbg8xHS5HN6S6N8SS7yA4IO1dQo+fqq2TlUrvhWATZAUBopg+E9RKuLZuHeBMcT8IfFZDlNzSDorZJEq8UmN/uF4UdDBc3nFwtHqxSrCrpUf9XsPOq3wWeYwV/QYQOF8EHu1fA4KEZ0jqNhK/spfpZw4yIbXkc1+6CC9k2UWo28Pton8egaF3Sofiyk1LWjos/XPkbj4PRDH50PBXINQ4WBCjppaRyddzEMu43U1OFcj6rFz7MRbpk5KO2Tcproe+Tvve2gekiG/FdN9dfxg72gw4vC9CGGczaNqwpSwXmTwCFUZCvvYhBKFaP/MRv1iwtKJZ8TdQZnkRiWevGaXjFB82cmuUbqflNRP8NixDKCdo6j7zFJjnEXld2wTxFNhvNR5oIO0TgMH2AGtevgMEV7yAlLn+MOytNhecHyKI3YMUEHZ7nguIo481awtO+LLSRQQectMvxTivoZ5tfLCDr8m/xQJtF+EEX7kAcP3r3fhvAYLnjwFpTOoeZEx/7HzPRFpE7oJDXg1kUuvI5VQjshej5C5dIFbb8Nj1twvsyrvNJKQA4ujbRU0Hh0pdB7/kFB4am/JZ7M2SlkX5dQu+igN51X8IW1oPQlLN1sJVVcQC0xWZTtJ5WZ6PHVWvkyuIQPvZd5UZj+OH9UUJ97Ndd8kUpMDu0/HbiX85/IOmEsaB/uvvmhzm8LEpMnF9RG+VtwCZ+nFjRgdNtF49RB4blJVhuZd53kaL5G+Aoay7pXafab2NJnlyRSfoQNDptJGuLpalYsKq7CmgTVGI/Qv6yjdEASR6ZbF9kK2v9Esukl1tq1tfl4YqItiy54EVrtUJeZznVXliLkqQRVQ7sbbMcrn7bNJaSxh+ZR8B2qGaska4apoHR4X3K3Umwzs15WodUAFWH9AroxUfJUIkTKOzFBtUi8q5KtpDHxtoVqKMeHti7XLxDUKJZWSciaKyAKep2597MmeAp6XUMmfGgr7PfUap2HDS1qxDc7zxTqhz003y0q1Mfmoc+OVIJBCvWTodPVlkFnotsvENTar6AT1jDJD6/7Ph31iS8qqHv19wA45F6NtdI1w1LQhWWjJGjR3sqjrm22iK0CJbVnabKKY5ivrrDUae3X0J9XUfgfgmp1UtroNU1lpqQ2b0RYIwwFXaLwngj9rGHpc9xHnSzvzTQ7o5KfJsrTYwZBFd5VFblwJ1RCsw+q6Jpe+M8S9EHJR/7WxGt+b6H0fMEPc6cAd7KTix/8BKVRcLq1bnm05GrfNRb3B1+r2jY5f+tZtL1Nvfjw8wmCThgP0I6XbXbSk2179Xl1xZ8lqM9dG5WX+na/7GkvOElQyVDPtDXwoIjKeSdx2ZcDTJOkNbJgBUd4WrZE0B7cfAaZPb/lUJsTlmliQfeeCuthayJo94SUj/yMttmLtrgpZrP4xftLhV/P9gzx/pxu2exbtbSaH/JMG7aLrZqDLpN9T9al37YwZJw4bBPblySp7LtzXkJhj2S0qtnpDApODc1riZuc2D5BhY1CBBVYI4IKrBFBBdaIoAJrRFCBNSKowBoRVGCNCCqwRgQVWCOCCqwRQQXWiKACa0RQgTUiqMAaEVRgjQgqsEYEFRgD/AcmwB3eybjtvwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NGetText.Target>
+                    <uix:NGetText.Text>
+                      <OutArgument x:TypeArguments="x:String">[domesticTxt]</OutArgument>
+                    </uix:NGetText.Text>
+                    <uix:NGetText.WordsInfo>
+                      <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                        <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                          <VariableReference.Variable>
+                            <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="WordsInfo" />
+                          </VariableReference.Variable>
+                        </VariableReference>
+                      </OutArgument>
+                    </uix:NGetText.WordsInfo>
+                  </uix:NGetText>
+                </ActivityAction>
+              </uta:VerifyControlAttribute.ActivityToTest>
+              <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                <ActivityFunc x:TypeArguments="x:Object">
+                  <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_29">
+                    <uta:ArgumentsBridge.Input>
+                      <InArgument x:TypeArguments="x:Object">
+                        <VariableValue x:TypeArguments="x:Object">
+                          <VariableValue.Variable>
+                            <Variable x:TypeArguments="x:Object" Name="Text" />
+                          </VariableValue.Variable>
+                        </VariableValue>
+                      </InArgument>
+                    </uta:ArgumentsBridge.Input>
+                  </uta:ArgumentsBridge>
+                </ActivityFunc>
+              </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+              <uta:VerifyControlAttribute.Expression>
+                <InArgument x:TypeArguments="x:String">["Domestic Violence"]</InArgument>
+              </uta:VerifyControlAttribute.Expression>
+            </uta:VerifyControlAttribute>
+            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="user on Domestic violence Page" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_16" Name="step 15" Status="Compare" TakeScreenshot="True" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="712,52.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="620,460" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute Facebook" sap:VirtualizedContainerService.HintSize="578,96" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_7" Operator="Equality" OutputArgument="StatusCode" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                    <uta:VerifyControlAttribute.ActivityToTest>
+                      <ActivityAction>
+                        <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request privacyPolicy" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_7" Method="GET" RelativeEndpoint="https://www.facebook.com/preferredmutual">
+                          <ui:OrchestratorHttpRequest.ResponseHeaders>
+                            <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                              <VariableReference x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                                <VariableReference.Variable>
+                                  <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponseHeaders" />
+                                </VariableReference.Variable>
+                              </VariableReference>
+                            </OutArgument>
+                          </ui:OrchestratorHttpRequest.ResponseHeaders>
+                          <ui:OrchestratorHttpRequest.Result>
+                            <OutArgument x:TypeArguments="x:String">
+                              <VariableReference x:TypeArguments="x:String">
+                                <VariableReference.Variable>
+                                  <Variable x:TypeArguments="x:String" Name="Result" />
+                                </VariableReference.Variable>
+                              </VariableReference>
+                            </OutArgument>
+                          </ui:OrchestratorHttpRequest.Result>
+                          <ui:OrchestratorHttpRequest.StatusCode>
+                            <OutArgument x:TypeArguments="x:Int32">
+                              <VariableReference x:TypeArguments="x:Int32">
+                                <VariableReference.Variable>
+                                  <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID16" Name="StatusCode" />
+                                </VariableReference.Variable>
+                              </VariableReference>
+                            </OutArgument>
+                          </ui:OrchestratorHttpRequest.StatusCode>
+                        </ui:OrchestratorHttpRequest>
+                      </ActivityAction>
+                    </uta:VerifyControlAttribute.ActivityToTest>
+                    <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                      <ActivityFunc x:TypeArguments="x:Object">
+                        <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_7">
+                          <uta:ArgumentsBridge.Input>
+                            <InArgument x:TypeArguments="x:Object">
+                              <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID16}" />
+                            </InArgument>
+                          </uta:ArgumentsBridge.Input>
+                        </uta:ArgumentsBridge>
+                      </ActivityFunc>
+                    </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                    <uta:VerifyControlAttribute.Expression>
+                      <InArgument x:TypeArguments="x:String">["200"]</InArgument>
+                    </uta:VerifyControlAttribute.Expression>
+                  </uta:VerifyControlAttribute>
+                  <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute Twiter" sap:VirtualizedContainerService.HintSize="578,96" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_8" Operator="Equality" OutputArgument="StatusCode" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                    <uta:VerifyControlAttribute.ActivityToTest>
+                      <ActivityAction>
+                        <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request privacyPolicy" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_8" Method="GET" RelativeEndpoint="https://twitter.com/PreferredMutual">
+                          <ui:OrchestratorHttpRequest.ResponseHeaders>
+                            <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                              <VariableReference x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                                <VariableReference.Variable>
+                                  <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponseHeaders" />
+                                </VariableReference.Variable>
+                              </VariableReference>
+                            </OutArgument>
+                          </ui:OrchestratorHttpRequest.ResponseHeaders>
+                          <ui:OrchestratorHttpRequest.Result>
+                            <OutArgument x:TypeArguments="x:String">
+                              <VariableReference x:TypeArguments="x:String">
+                                <VariableReference.Variable>
+                                  <Variable x:TypeArguments="x:String" Name="Result" />
+                                </VariableReference.Variable>
+                              </VariableReference>
+                            </OutArgument>
+                          </ui:OrchestratorHttpRequest.Result>
+                          <ui:OrchestratorHttpRequest.StatusCode>
+                            <OutArgument x:TypeArguments="x:Int32">
+                              <VariableReference x:TypeArguments="x:Int32">
+                                <VariableReference.Variable>
+                                  <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID17" Name="StatusCode" />
+                                </VariableReference.Variable>
+                              </VariableReference>
+                            </OutArgument>
+                          </ui:OrchestratorHttpRequest.StatusCode>
+                        </ui:OrchestratorHttpRequest>
+                      </ActivityAction>
+                    </uta:VerifyControlAttribute.ActivityToTest>
+                    <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                      <ActivityFunc x:TypeArguments="x:Object">
+                        <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_8">
+                          <uta:ArgumentsBridge.Input>
+                            <InArgument x:TypeArguments="x:Object">
+                              <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID17}" />
+                            </InArgument>
+                          </uta:ArgumentsBridge.Input>
+                        </uta:ArgumentsBridge>
+                      </ActivityFunc>
+                    </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                    <uta:VerifyControlAttribute.Expression>
+                      <InArgument x:TypeArguments="x:String">["200"]</InArgument>
+                    </uta:VerifyControlAttribute.Expression>
+                  </uta:VerifyControlAttribute>
+                  <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute  LinkedIn" sap:VirtualizedContainerService.HintSize="578,96" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_9" Operator="Equality" OutputArgument="StatusCode" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                    <uta:VerifyControlAttribute.ActivityToTest>
+                      <ActivityAction>
+                        <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_9" Method="GET" RelativeEndpoint="https://www.linkedin.com/company/preferred-mutual/">
+                          <ui:OrchestratorHttpRequest.ResponseHeaders>
+                            <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                              <VariableReference x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                                <VariableReference.Variable>
+                                  <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponseHeaders" />
+                                </VariableReference.Variable>
+                              </VariableReference>
+                            </OutArgument>
+                          </ui:OrchestratorHttpRequest.ResponseHeaders>
+                          <ui:OrchestratorHttpRequest.Result>
+                            <OutArgument x:TypeArguments="x:String">
+                              <VariableReference x:TypeArguments="x:String">
+                                <VariableReference.Variable>
+                                  <Variable x:TypeArguments="x:String" Name="Result" />
+                                </VariableReference.Variable>
+                              </VariableReference>
+                            </OutArgument>
+                          </ui:OrchestratorHttpRequest.Result>
+                          <ui:OrchestratorHttpRequest.StatusCode>
+                            <OutArgument x:TypeArguments="x:Int32">
+                              <VariableReference x:TypeArguments="x:Int32">
+                                <VariableReference.Variable>
+                                  <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID18" Name="StatusCode" />
+                                </VariableReference.Variable>
+                              </VariableReference>
+                            </OutArgument>
+                          </ui:OrchestratorHttpRequest.StatusCode>
+                        </ui:OrchestratorHttpRequest>
+                      </ActivityAction>
+                    </uta:VerifyControlAttribute.ActivityToTest>
+                    <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                      <ActivityFunc x:TypeArguments="x:Object">
+                        <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_9">
+                          <uta:ArgumentsBridge.Input>
+                            <InArgument x:TypeArguments="x:Object">
+                              <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID18}" />
+                            </InArgument>
+                          </uta:ArgumentsBridge.Input>
+                        </uta:ArgumentsBridge>
+                      </ActivityFunc>
+                    </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                    <uta:VerifyControlAttribute.Expression>
+                      <InArgument x:TypeArguments="x:String">["200"]</InArgument>
+                    </uta:VerifyControlAttribute.Expression>
+                  </uta:VerifyControlAttribute>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Victims of Domestic Violence and Endangered Individuals | Preferred Mutual" sap:VirtualizedContainerService.HintSize="712,52.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="4607ec03-4157-457f-ab7c-6072220823fb" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="796,928.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Sequence privacy policy new tab" sap:VirtualizedContainerService.HintSize="754,835.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="privPolTxt" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control AttributePrivacy Policy" sap:VirtualizedContainerService.HintSize="712,96" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_30" Operator="Equality" OutputArgument="StatusCode" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                        <uta:VerifyControlAttribute.ActivityToTest>
+                          <ActivityAction>
+                            <ui:OrchestratorHttpRequest JSONPayload="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Orchestrator HTTP Request privacyPolicy" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="OrchestratorHttpRequest_11" Method="GET" RelativeEndpoint="https://www.preferredmutual.com/online-privacy-policy">
+                              <ui:OrchestratorHttpRequest.ResponseHeaders>
+                                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                                  <VariableReference x:TypeArguments="scg:Dictionary(x:String, x:String)">
+                                    <VariableReference.Variable>
+                                      <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="ResponseHeaders" />
+                                    </VariableReference.Variable>
+                                  </VariableReference>
+                                </OutArgument>
+                              </ui:OrchestratorHttpRequest.ResponseHeaders>
+                              <ui:OrchestratorHttpRequest.Result>
+                                <OutArgument x:TypeArguments="x:String">
+                                  <VariableReference x:TypeArguments="x:String">
+                                    <VariableReference.Variable>
+                                      <Variable x:TypeArguments="x:String" Name="Result" />
+                                    </VariableReference.Variable>
+                                  </VariableReference>
+                                </OutArgument>
+                              </ui:OrchestratorHttpRequest.Result>
+                              <ui:OrchestratorHttpRequest.StatusCode>
+                                <OutArgument x:TypeArguments="x:Int32">
+                                  <VariableReference x:TypeArguments="x:Int32">
+                                    <VariableReference.Variable>
+                                      <Variable x:TypeArguments="x:Int32" x:Name="__ReferenceID19" Name="StatusCode" />
+                                    </VariableReference.Variable>
+                                  </VariableReference>
+                                </OutArgument>
+                              </ui:OrchestratorHttpRequest.StatusCode>
+                            </ui:OrchestratorHttpRequest>
+                          </ActivityAction>
+                        </uta:VerifyControlAttribute.ActivityToTest>
+                        <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                          <ActivityFunc x:TypeArguments="x:Object">
+                            <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_30">
+                              <uta:ArgumentsBridge.Input>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <VariableValue x:TypeArguments="x:Object" Variable="{x:Reference __ReferenceID19}" />
+                                </InArgument>
+                              </uta:ArgumentsBridge.Input>
+                            </uta:ArgumentsBridge>
+                          </ActivityFunc>
+                        </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                        <uta:VerifyControlAttribute.Expression>
+                          <InArgument x:TypeArguments="x:String">["200"]</InArgument>
+                        </uta:VerifyControlAttribute.Expression>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uta:VerifyControlAttribute>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Online Privacy Policy'" sap:VirtualizedContainerService.HintSize="712,158" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4607ec03-4157-457f-ab7c-6072220823fb" Version="V1">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/" DesignTimeRectangle="617, 457, 249, 38" ElementType="Text" FriendlyName="'Online Privacy Policy'" FullSelectorArgument="&lt;webctrl aaname='Online Privacy Policy' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Online Privacy Policy' parentid='form1' tag='A' type='' check:text='Online Privacy Policy' /&gt;" Guid="48bcdf78-9c6f-4230-a3d1-054a78226421" ImageBase64="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" InformativeScreenshot="cb695fc58e2cdca0281729f6ba239fa5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home, Auto and Business Insurance | Preferred Mutual Insurance Company' /&gt;" SearchSteps="FuzzySelector, Image">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                <uix:Target DesignTimeRectangle="892, 457, 159, 38" ElementType="Text" FriendlyName="'Terms Of Use'" FullSelectorArgument="&lt;webctrl aaname='Terms Of Use' parentid='form1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Terms Of Use' parentid='form1' tag='A' type='' check:text='Terms Of Use' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <uta:VerifyControlAttribute AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Control Attribute Privacy policy text" sap:VirtualizedContainerService.HintSize="712,232" sap2010:WorkflowViewState.IdRef="VerifyControlAttribute_31" Operator="Equality" OutputArgument="Text" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                        <uta:VerifyControlAttribute.ActivityToTest>
+                          <ActivityAction>
+                            <uix:NGetText DisplayName="Get Text 'Privacy Policy'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="4607ec03-4157-457f-ab7c-6072220823fb" ScrapingOptions="None" Version="V1">
+                              <uix:NGetText.OutUiElement>
+                                <OutArgument x:TypeArguments="ui:UiElement">
+                                  <VariableReference x:TypeArguments="ui:UiElement">
+                                    <VariableReference.Variable>
+                                      <Variable x:TypeArguments="ui:UiElement" Name="OutUiElement" />
+                                    </VariableReference.Variable>
+                                  </VariableReference>
+                                </OutArgument>
+                              </uix:NGetText.OutUiElement>
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.preferredmutual.com/online-privacy-policy" DesignTimeRectangle="545, 434, 982, 81" FriendlyName="'Privacy Policy'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' /&gt;" Guid="46f51ab2-8c0c-422f-8a71-6e3f051943b7" InformativeScreenshot="2fbf8402878c06c41264db0ac8899d49.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Privacy Policy | Preferred Mutual' /&gt;" SearchSteps="FuzzySelector">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="506, 232, 164, 70" ElementType="ListItem" FriendlyName="'Agents'" FullSelectorArgument="&lt;webctrl isleaf='1' tag='LI' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='LI' type='' aaname='Agents' check:text='Agents' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <uix:NGetText.Text>
+                                <OutArgument x:TypeArguments="x:String">[privPolTxt]</OutArgument>
+                              </uix:NGetText.Text>
+                              <uix:NGetText.WordsInfo>
+                                <OutArgument x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                                  <VariableReference x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)">
+                                    <VariableReference.Variable>
+                                      <Variable x:TypeArguments="scg:IEnumerable(uuam:NWordInfo)" Name="WordsInfo" />
+                                    </VariableReference.Variable>
+                                  </VariableReference>
+                                </OutArgument>
+                              </uix:NGetText.WordsInfo>
+                            </uix:NGetText>
+                          </ActivityAction>
+                        </uta:VerifyControlAttribute.ActivityToTest>
+                        <uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                          <ActivityFunc x:TypeArguments="x:Object">
+                            <uta:ArgumentsBridge sap2010:WorkflowViewState.IdRef="ArgumentsBridge_31">
+                              <uta:ArgumentsBridge.Input>
+                                <InArgument x:TypeArguments="x:Object">
+                                  <VariableValue x:TypeArguments="x:Object">
+                                    <VariableValue.Variable>
+                                      <Variable x:TypeArguments="x:Object" Name="Text" />
+                                    </VariableValue.Variable>
+                                  </VariableValue>
+                                </InArgument>
+                              </uta:ArgumentsBridge.Input>
+                            </uta:ArgumentsBridge>
+                          </ActivityFunc>
+                        </uta:VerifyControlAttribute.ArgumentsBridgeActivity>
+                        <uta:VerifyControlAttribute.Expression>
+                          <InArgument x:TypeArguments="x:String">["Privacy Policy"]</InArgument>
+                        </uta:VerifyControlAttribute.Expression>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uta:VerifyControlAttribute>
+                      <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="User on Privacy policy page" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="712,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_17" Name="step" Status="Compare" TakeScreenshot="True" />
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="034533ff3ae21821e6f5496684b1b7c9.png" Selector="&lt;html app='chrome.exe' title='Victims of Domestic Violence and Endangered Individuals | Preferred Mutual'/&gt;" Url="https://www.preferredmutual.com/victims-of-domestic-violence-and-endangered-individuals" />
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="de62af678279d2e0e72098297d06297f.png" Selector="&lt;html app='chrome.exe' title='Home, Auto and Business Insurance | Preferred Mutual Insurance Company'/&gt;" Url="https://www.preferredmutual.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

@@ -17,10 +17,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
-- task: UiPathPack@2
+- task: UiPathTest@2
   inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)\project.json'
+    testTarget: 'TestSet'
     orchestratorConnection: 'PMIC'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    testSet: 'PMIC Test Automation'
+    folderName: 'San'
 

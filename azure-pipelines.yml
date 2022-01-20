@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  sankrityaPool
+  Default
 
 steps:
 - script: echo Hello, world!
